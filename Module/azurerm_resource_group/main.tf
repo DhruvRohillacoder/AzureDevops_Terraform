@@ -1,4 +1,4 @@
 resource "azurerm_resource_group" "ddrg" {
-  name     = "dd-rg"
+  name     = "ddrg"
   location = "central india"
 }
