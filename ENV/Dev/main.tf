@@ -11,3 +11,8 @@ module "subnet" {
   depends_on = [module.vnet]
   source     = "../../Module/azurerm_subnet"
 }
+
+module "nic" {
+  depends_on = [module.subnet]
+  source     = "../../Module/azurerm_network_interface"
+}
